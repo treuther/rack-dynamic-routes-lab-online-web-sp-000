@@ -4,7 +4,7 @@
 # IF a user requests an item that you don't have, then return a 400 and an
 # error message
 
-class application
+class Application
 
 
 
