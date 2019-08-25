@@ -10,7 +10,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    if req.path =="/item/"
+    if req.path.match =="/item/"
       resp.write "#{item}"
     else
       resp.write "Route not found"
