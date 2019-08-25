@@ -13,7 +13,7 @@ class Application
     if req.path =="/item/"
       resp.write "#{item}"
     else
-      resp.write "Path not found"
+      resp.write "Route not found"
       resp.status = 404
 
   end
