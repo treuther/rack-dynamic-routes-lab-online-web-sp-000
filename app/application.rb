@@ -11,6 +11,10 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path =="/item/"
+      resp.write "#{item}"
+    else
+      resp.write "Path not found"
+      resp.status = 404
 
   end
 
